@@ -58,6 +58,11 @@
         height: 120px;
     }   
 }
+@media(max-width: 700px){
+    .lang{
+        height: 45vh;
+    }
+}
 @media(max-width: 600px){
     .lang div img{
         height: 100px;
