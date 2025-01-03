@@ -172,7 +172,7 @@ nav ul li a:hover::after {
 
 .copyright{
     width: 100%;
-    min-height: 25vh;
+    min-height: 15vh;
     background-color: #262626;
     display: flex;
     flex-direction: column;
@@ -228,6 +228,9 @@ nav ul li a:hover::after {
   }
 
   @media (max-width: 800px) {
+    .copyright{
+      min-height: 25vh;
+    }
     .footer-links{
     display: block;
     display: flex;
@@ -294,7 +297,7 @@ nav ul li a:hover::after {
     height: 53vh;
   }
   .footer-links{
-    gap: 12px;
+    gap: 16px;
   }
 }
 /* ----------------------------------------- Footer Section Strat From Here----------------------------------- */
