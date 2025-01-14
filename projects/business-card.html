@@ -77,18 +77,6 @@
         font-size: 16px;
         color: yellow;
       }
-      body h1 {
-        color: yellow;
-      }
-
-      @media (max-width: 500px) {
-        body h1 {
-          font-size: 5px;
-        }
-        lable {
-          font-size: 12px;
-        }
-      }
       /* --- */
 
       .bgimage {
@@ -115,12 +103,6 @@
         justify-content: center;
         align-items: center;
       }
-      .cname {
-        font-size: 20px;
-        color: yellow;
-        margin-bottom: 6px;
-        text-align: center;
-      }
       .cstatus {
         font-size: 20px;
         color: rgba(10, 1, 1, 0.78);
@@ -135,13 +117,6 @@
         justify-content: center;
         align-items: center;
       }
-      .ename {
-        font-size: 20px;
-        text-decoration: underline;
-        color: white;
-        margin-bottom: 4px;
-        width: 100%;
-      }
       .phone-div {
         display: flex;
         justify-content: flex-start;
@@ -149,10 +124,29 @@
         gap: 12px;
         width: 100%;
       }
-      .phoneno {
+      .textfont{
+        font-size: 16px;
+        text-align: center;
+        color: #FFD700;
+      }
+      .headh1{
         font-size: 20px;
-        color: white;
-        margin-bottom: 4px;
+        text-decoration: underline;
+        color: #FFD700;
+        width: 100%;
+      }
+
+      @media(max-width: 500px){
+        .textfont{
+          font-size: 12px;
+          text-align: center;
+        }
+        .headh1{
+          font-size: 16px;
+        }
+        .imglogo{
+          width: 80px;
+        }
       }
     </style>
   </head>
@@ -170,6 +164,7 @@
             type="text"
             placeholder="Add Company Name"
             id="inputBox"
+            maxlength="18"
           />
         </div>
       </div>
@@ -181,6 +176,7 @@
           type="text"
           placeholder="Add Company Status"
           id="inputBox2"
+          maxlength="25"
         />
       </div>
 
@@ -191,6 +187,7 @@
           type="text"
           placeholder="Write Heading"
           id="inputBox3"
+          maxlength="25"
         />
       </div>
 
@@ -201,6 +198,7 @@
           type="text"
           placeholder="Add Phone Number"
           id="inputBox4"
+          maxlength="25"
         />
       </div>
 
@@ -211,6 +209,7 @@
           type="text"
           placeholder="Add Employee Email"
           id="inputBox5"
+          maxlength="25"
         />
       </div>
 
@@ -221,6 +220,7 @@
           type="text"
           placeholder="Add Company Address"
           id="inputBox6"
+          maxlength="25"
         />
       </div>
 
@@ -231,6 +231,7 @@
           type="text"
           placeholder="Add Company Web Link"
           id="inputBox7"
+          maxlength="25"
         />
       </div>
 
@@ -247,26 +248,26 @@
         <div class="bgimage">
           <div class="left-card">
             <img class="imglogo" src="./Business_card.png" alt="" />
-            <h1 class="cname">Microsoft</h1>
-            <h1 class="cstatus">Software Company</h1>
+            <h1 class="textfont">Microsoft</h1>
+            <h1 class="textfont">Software Company</h1>
           </div>
           <div class="right-card">
-            <h1 class="ename">Roshan Wankhede</h1>
+            <h1 class="headh1">Roshan Wankhede</h1>
             <div class="phone-div">
               <i class="fa-solid fa-phone iconstyle"></i>
-              <h1 class="phoneno">9988775566</h1>
+              <h1 class="textfont">9988775566</h1>
             </div>
             <div class="phone-div">
               <i class="fa-solid fa-envelope iconstyle"></i>
-              <h1 class="phoneno">user@gmail.com</h1>
+              <h1 class="textfont">user@gmail.com</h1>
             </div>
             <div class="phone-div">
               <i class="fa-solid fa-address-book iconstyle"></i>
-              <h1 class="phoneno">Borivali West</h1>
+              <h1 class="textfont">Borivali West</h1>
             </div>
             <div class="phone-div">
               <i class="fa-brands fa-internet-explorer iconstyle"></i>
-              <h1 class="phoneno">Microsoft.com</h1>
+              <h1 class="textfont">Microsoft.com</h1>
             </div>
           </div>
         </div>
@@ -337,18 +338,12 @@
           let h1 = document.createElement("h1");
           h1.innerHTML = inputBox.value;
           div1.appendChild(h1);
-          h1.style.cssText = `font-size: 20px;
-                              text-align: center;
-                              color: yellow;
-                              margin-bottom: 6px`;
+          h1.classList.add("textfont");
 
           let h2 = document.createElement("h1");
           h2.innerHTML = inputBox2.value;
           div1.appendChild(h2);
-          h2.style.cssText = `font-size: 20px;
-                              color: #0a0101c7;
-                              text-align: center;
-                              margin-bottom: 4px`;
+          h2.classList.add("textfont");
 
           let div2 = document.createElement("div");
           div.appendChild(div2);
@@ -362,12 +357,7 @@
           let h3 = document.createElement("h1");
           h3.innerHTML = inputBox3.value;
           div2.appendChild(h3);
-          h3.style.cssText = `font-size: 20px;
-                              text-decoration: underline;
-                              color: white;
-                              margin-bottom: 4px;
-                              width: 100%;
-                              `;
+          h3.classList.add("headh1");
 
           let phoneDiv = document.createElement("div");
           div2.appendChild(phoneDiv);
@@ -380,9 +370,8 @@
           let i1 = document.createElement("i");
           let h4 = document.createElement("h1");
           h4.innerHTML = inputBox4.value;
-          h4.style.cssText = `font-size: 20px;
-                              color: white;
-                              margin-bottom: 4px`;
+          h4.classList.add("textfont");
+
           i1.setAttribute("class", "fa-solid fa-phone iconstyle");
           phoneDiv.appendChild(i1);
           phoneDiv.appendChild(h4);
@@ -398,9 +387,8 @@
           let i2 = document.createElement("i");
           let h5 = document.createElement("h1");
           h5.innerHTML = inputBox5.value;
-          h5.style.cssText = `font-size: 20px;
-                              color: white;
-                              margin-bottom: 4px`;
+          h5.classList.add("textfont");
+
           i2.setAttribute("class", "fa-solid fa-envelope iconstyle");
           emailDiv.appendChild(i2);
           emailDiv.appendChild(h5);
@@ -416,9 +404,8 @@
           let i3 = document.createElement("i");
           let h6 = document.createElement("h1");
           h6.innerHTML = inputBox6.value;
-          h6.style.cssText = `font-size: 20px;
-                              color: white;
-                              margin-bottom: 4px`;
+          h6.classList.add("textfont");
+
           i3.setAttribute("class", "fa-solid fa-address-book iconstyle");
           addrDiv.appendChild(i3);
           addrDiv.appendChild(h6);
@@ -434,9 +421,8 @@
           let i4 = document.createElement("i");
           let h7 = document.createElement("h1");
           h7.innerHTML = inputBox7.value;
-          h7.style.cssText = `font-size: 20px;
-                              color: white;
-                              margin-bottom: 4px`;
+          h7.classList.add("textfont");
+
           i4.setAttribute("class", "fa-brands fa-internet-explorer iconstyle");
           webDiv.appendChild(i4);
           webDiv.appendChild(h7);
