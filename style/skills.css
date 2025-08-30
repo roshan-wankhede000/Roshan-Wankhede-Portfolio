@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -73,80 +72,4 @@
     .lang div img{
         height: 80px;
     }  
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-.skills{
-    width: 100%;
-    /* height: 100vh; */
-    /* border: 1px solid red; */
-}
-.skills h1{
-    text-align: center;
-}
-.lang{
-    width: 100%;
-    /* height: 90vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:30px;
-    /* border: 1px solid red; */
-
-    perspective: 500px;
-}
-.lang div{
-    text-align: center;
-    border-radius: 15px;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px; 
-    transition: all 1s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-.lang div{
-    display: flex;
-    flex-direction: column;
-}
-.lang div:hover{
-    transform:rotatex(360deg);
-}
-.lang div img{
-    width: 100%;
-    height: 200px;
-}
-
-@media(max-width: 900px){
-    .lang div img{
-        height: 150px;
-    }
-}
-@media(max-width: 800px){
-    .lang div img{
-        height: 120px;
-    }   
-}
-@media(max-width: 700px){
-    .lang{
-        min-height: 45vh;
-    }
-}
-@media(max-width: 600px){
-    .lang div img{
-        height: 100px;
-    }  
-}
-@media(max-width: 400px){
-    .lang div img{
-        height: 80px;
-    }  
->>>>>>> dda5bae6b5daf85d9e217ea7451c6818b6c7a84b
 }
