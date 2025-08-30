@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -71,4 +72,79 @@
     .rechapcha{
        font-size: 8px;
    }  
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-container {
+    background: rgba(0, 0, 0, 0.77);
+    padding: 35px;
+    border-radius: 5px;
+    text-align: center;
+    /* width: 350px; */
+    color: white;
+}
+.login-container h2 {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.input-group {
+    margin: 15px 0;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.signin-login-btn{
+    width: 100%;
+    height: 40px;
+    /* font-size: 20px; */
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    text-align: center;
+    border: none;
+    font-weight: bolder;
+  }
+  .signin-code-btn{
+    width: 100%;
+    height: 40px;
+    /* font-size: 20px; */
+    border-radius: 5px;
+    background-color: rgba(17, 17, 17, 0.103);
+    color: white;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+  }
+.help-links {
+    margin-top: 15px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.help-links a {
+    color: white;
+    text-decoration: none;
+}
+.help-links a:hover {
+    text-decoration: underline;
+}
+.rechapcha{
+     margin-top: 15px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+@media(max-width: 476px){
+    .rechapcha{
+       font-size: 8px;
+   }  
+>>>>>>> dda5bae6b5daf85d9e217ea7451c6818b6c7a84b
 }

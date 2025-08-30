@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -220,4 +221,228 @@
   .movie-popip-btn{
     font-size: 20px;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.netflix-top10-image-responsive{
+    margin-left: 0px;
+    transition: transform 0.5s;
+  }
+  .netflix-top10-image-responsive:hover{
+    transform: translateY(-10px);
+  }
+
+  .numbers1 {
+    line-height: 1;
+    display: inline-block;
+    height: 1em;
+    font-size: 75px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem black;
+    position: absolute;
+    bottom: 25px;
+    left: -10px;
+  }
+
+  .owl-next span{
+    font-size: 50px;
+    color: white;
+    height: 90px;
+    width: 2%;
+    border-radius: 10px 10px;
+    position: absolute;
+    top: 17%;
+    right: -2%;
+    background-color: rgb(12 12 12 / 64%);
+  }
+  .owl-prev span{
+    font-size: 50px;
+    color: white;
+    height: 90px;
+    width: 2%;
+    border-radius: 10px;
+    position: absolute;
+    top: 17%;
+    left: -2%;
+    background-color: rgb(12 12 12 / 64%);
+  }
+  .owl-theme .owl-nav {
+    margin-top: 0px;
+}
+
+.modal-bg-color{
+  background-color: #161616;
+}
+
+.movie-popip-btn{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    color: white;
+    font-size: 27px;
+}
+.movie-popip-img{
+  width: 100%;
+  height: 60vh;
+}
+
+.netfilx-popup-getstarted-btn{
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  text-align: center;
+  border: none;
+  font-weight: bolder;
+  margin-left: 45px;
+}
+.netflix-span-btn{
+  background-color: rgb(45 45 45);
+    border: none;
+    padding: 5px;
+    color: #ffffffa3;
+    border-radius: 5px;
+}
+.netflix-span{
+  margin-left: 45px;
+}
+.netflix-movies-popup-text{
+  font-size: 17px;
+  color: #ffffffa3;
+  line-height: 22px;
+  margin-left: 45px;
+}
+
+  @media(max-width: 1199px){
+    .netflix-top10-image-responsive{
+        /* width: 100%; */
+      margin-left: 25px;
+  }
+
+  .numbers1 {
+        font-size: 60px;
+        bottom: 70px;
+        left: 14px;
+  }
+
+  }
+
+  @media(max-width: 1050px){
+    .owl-next span{
+        width: 4%;
+        right: 2%;
+      }
+
+      .owl-prev span{
+        width: 4%;
+        left: -1%;
+      }
+  }
+
+  @media(max-width: 991px){
+    .netflix-top10-image-responsive{
+        /* width: 100%; */
+      margin-left: 0px;
+  }
+  .numbers1 {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-size: 60px;
+    top:170px;
+    bottom: 70px;
+    left: -5px;
+}
+.netflix-span{
+  margin-left: 5px;
+}
+.netflix-movies-popup-text{
+  margin-left: 5px;
+  line-height: 14px;
+  font-size: 15px;
+}
+.netfilx-popup-getstarted-btn{
+  width: 98%;
+  height: 40px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+  }
+
+  @media(max-width: 767px){
+    .numbers1 {
+        font-size: 45px;
+        top:110px;
+        left: -5px;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        bottom: 145px;
+    }
+    .owl-next span{
+        width: 5%;
+        right: 3%;
+      }
+      .owl-prev span{
+        width: 5%;
+        left: 1%;
+      }
+}
+
+/* @media(max-width: 767px){
+    .numbers1 {
+        bottom: 145px;
+    }
+} */
+
+  @media(max-width: 575px) and (min-width: 501px) {
+    .netflix-top10-image-responsive{
+        width: 100%;
+      /* margin-left: 0px; */
+  }
+}
+
+@media(max-width: 500px) and (min-width: 401px) {
+    .netflix-top10-image-responsive{
+        width: 80%;
+      /* margin-left: 0px; */
+  }
+  .numbers1 {
+    top: 130px;
+    bottom: 125px;
+}
+  
+}
+
+  @media(max-width: 400px){
+    .netflix-top10-image-responsive{
+        width: 65%;
+      /* margin-left: 0px; */
+  }
+  .numbers1 {
+    bottom: 154px;
+    font-size: 30px;
+    left: 2px;
+}
+.owl-next span{
+    width: 6%;
+    right: 4%;
+  }
+
+  .owl-prev span{
+    width: 6%;
+    left: 1%;
+  }
+  .movie-popip-img{
+    width: 100%;
+    height: 40vh;
+  }
+  .movie-popip-btn{
+    font-size: 20px;
+}
+>>>>>>> dda5bae6b5daf85d9e217ea7451c6818b6c7a84b
   }
